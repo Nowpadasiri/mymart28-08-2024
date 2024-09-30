@@ -31,7 +31,7 @@ pipeline{
                 sh "java -jar /var/lib/workspace/target/MyMart-0.0.1-SNAPSHOT.jar"
             }
         }
-
+    }
         stage('dev'){
 
       steps  {
