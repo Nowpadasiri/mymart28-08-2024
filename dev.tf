@@ -68,8 +68,8 @@ provisioner "remote-exec" {
         "sudo apt install gradle -y",
         "sudo apt install spring -y",
         "mvn clean package",
-        "java -jar target/MyMart-0.0.1-SNAPSHOT.jar",
-        "nohup java -jar target/MyMart-0.0.1-SNAPSHOT.jar > spring_boot.log 2>&1 &",
+        "java -jar target/MyMart-0.0.1-SNAPSHOT.jar"
+    
     ]
     connection {
       type     = "ssh"
