@@ -43,7 +43,7 @@ resource "aws_security_group" "yash_sg" {
 
 }
 
-resource "aws_instance" "namedev" {
+resource "aws_instance" "name" {
   ami = "ami-0e86e20dae9224db8"
   instance_type = "t2.medium"
   key_name = "yash"
