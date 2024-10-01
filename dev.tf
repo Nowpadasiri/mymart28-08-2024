@@ -47,7 +47,7 @@ resource "aws_instance" "name" {
   ami = "ami-0e86e20dae9224db8"
   instance_type = "t2.medium"
   key_name = "yash"
-  vpc_security_group_ids = [ "sg-05493c14f6c4b205b" ]
+  vpc_security_group_ids = [ "sg-0eeb0784489e96f24" ]
   tags = {
     Name = "jenkins2"
   }
