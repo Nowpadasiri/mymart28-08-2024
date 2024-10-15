@@ -46,13 +46,13 @@ resource "aws_security_group" "yash_sg" {
 resource "aws_instance" "name" {
   ami = "ami-0866a3c8686eaeeba"
   instance_type = "t2.medium"
-  key_name = "devops"
+  key_name = "yash"
   vpc_security_group_ids = [ "sg-0eeb0784489e96f24" ]
   tags = {
     Name = "mart1"
   }
   
-/*provisioner "remote-exec" {
+provisioner "remote-exec" {
     inline = [
         "sudo apt-get update",
         "sudo apt-get upgrade -y",
@@ -78,4 +78,4 @@ resource "aws_instance" "name" {
       host     = self.public_ip  
     }
  }
-}*/
+}
